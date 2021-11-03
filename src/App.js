@@ -1,13 +1,15 @@
-import "./App.css";
+import { Route } from "react-router-dom/cjs/react-router-dom.min";
 
-function App() {
+const Home = () => <h1>Welcome to Home page!!!</h1>;
+const Movie = () => <h1>Welcome to Movie page!!!</h1>;
+
+const App = () => {
   return (
-    <div className="App p-10">
-      <button className="border-2 border-blue-500 bg-blue-500 text-white px-2 py-1 rounded-lg  hover:bg-transparent hover:text-blue-500 hover:border-blue-500 ">
-        Hello!!
-      </button>
-    </div>
+    <>
+      <Route path="/" exact component={Home} />
+      <Route path="/movies" exact component={Movie} />
+    </>
   );
-}
+};
 
 export default App;
