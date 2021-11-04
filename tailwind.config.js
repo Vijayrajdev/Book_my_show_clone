@@ -5,7 +5,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Add your custom Pallete
+        navCol: {
+          primary : "#2E3147",
+        },
       },
     },
   },
