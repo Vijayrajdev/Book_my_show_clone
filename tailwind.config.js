@@ -6,7 +6,10 @@ module.exports = {
     extend: {
       colors: {
         navCol: {
-          primary : "#2E3147",
+          primary: "#2E3147",
+        },
+        buttonCol: {
+          primary: "#f84464",
         },
       },
     },
